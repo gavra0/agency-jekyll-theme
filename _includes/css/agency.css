@@ -960,3 +960,7 @@ body {
 a.underline {
     text-decoration: underline;
 }
+
+p.inline-block {
+    display: inline-block;
+}
