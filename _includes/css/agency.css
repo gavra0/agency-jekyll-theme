@@ -236,7 +236,7 @@ fieldset[disabled] .btn-xl.active {
 
 @media(min-width:768px) {
     .navbar-default {
-        padding: 25px 0;
+        padding: 0;
         border: 0;
         background-color: transparent;
         -webkit-transition: padding .3s;
@@ -264,7 +264,9 @@ fieldset[disabled] .btn-xl.active {
         font-size: 1.5em;
     }
 }
-
+.navbar {
+    margin-bottom: 5px;
+}
 header {
     text-align: center;
     color: #fff;
@@ -303,8 +305,8 @@ header .intro-text .intro-heading {
 
 @media(min-width:768px) {
     header .intro-text {
-        padding-top: 300px;
-        padding-bottom: 200px;
+        padding-top: 150px;
+        padding-bottom: 350px;
     }
 
     header .intro-text .intro-lead-in {
@@ -981,7 +983,19 @@ p.inline-block {
     background-size: cover;
 }
 
+@media(max-width:768px) {
+    #rsvp {
+        background-position: 40% 0%;
+    }
+}
+
 #rsvp .panel {
     padding-top: 30px;
     padding-bottom: 30px;
+    background-color: rgba(255,255,255,0.75)
+}
+
+#info .card-info {
+    padding: 100px 0px;
+    border: 2px solid #{{ site.data.template.color.primary }};
 }
